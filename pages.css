@@ -96,6 +96,14 @@
     color: var(--primary);
 }
 
+.price .grade-label {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-align: center;
+}
+
 .price .period {
     font-size: 0.9rem;
     color: var(--text-light);
@@ -196,7 +204,7 @@
     color: var(--text-dark);
 }
 
-.detail-content > p {
+.detail-content>p {
     font-size: 1.1rem;
     color: var(--text-medium);
     line-height: 1.8;
@@ -268,6 +276,142 @@
 .team-member p {
     color: var(--text-medium);
     line-height: 1.7;
+}
+
+.team-grid-custom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.team-grid-custom .team-member {
+    width: calc(50% - 1.5rem);
+    max-width: 350px;
+}
+
+.team-grid-custom .team-member:nth-child(3),
+.team-grid-custom .team-member:nth-child(4),
+.team-grid-custom .team-member:nth-child(5) {
+    width: calc(33.333% - 2rem);
+    max-width: 280px;
+}
+
+.team-grid-custom .team-member {
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.team-grid-custom .team-member:hover {
+    background: var(--bg-light);
+    transform: translateY(-5px);
+}
+
+.team-grid-custom .team-member:hover .team-photo {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(26, 77, 122, 0.3);
+}
+
+/* Team Modal */
+.team-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.team-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.team-modal-content {
+    background-color: var(--bg-white);
+    padding: 3rem;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.team-modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.team-modal-close:hover {
+    color: var(--text-dark);
+    background: var(--bg-light);
+}
+
+#modalBody h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+#modalBody .modal-role {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+#modalBody p {
+    color: var(--text-medium);
+    line-height: 1.8;
+    margin-bottom: 1rem;
 }
 
 .values-grid {
@@ -534,25 +678,55 @@
     .page-header h1 {
         font-size: 2.5rem;
     }
-    
+
     .pricing-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .pricing-card.featured {
         transform: none;
     }
-    
+
     .pricing-card.featured:hover {
         transform: translateY(-5px);
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .form-container {
         padding: 2rem;
+    }
+
+    .team-grid-custom {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .team-grid-custom .team-member:nth-child(3),
+    .team-grid-custom .team-member:nth-child(4),
+    .team-grid-custom .team-member:nth-child(5) {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .team-modal-content {
+        padding: 2rem;
+        width: 95%;
+    }
+
+    .faq-question {
+        padding: 1.25rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        padding: 0 1.5rem;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 0 1.5rem 1.25rem 1.5rem;
     }
 }
