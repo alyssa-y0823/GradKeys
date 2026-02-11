@@ -701,15 +701,21 @@
     }
 
     .team-grid-custom {
-        grid-template-columns: 1fr;
-        max-width: 400px;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 2rem;
+    }
+
+    .team-grid-custom .team-member {
+        width: 100%;
+        max-width: 100%;
     }
 
     .team-grid-custom .team-member:nth-child(3),
     .team-grid-custom .team-member:nth-child(4),
     .team-grid-custom .team-member:nth-child(5) {
-        grid-column: 1;
-        grid-row: auto;
+        width: 100%;
+        max-width: 100%;
     }
 
     .team-modal-content {

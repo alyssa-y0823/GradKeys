@@ -121,29 +121,29 @@ document.querySelectorAll('.service-card, .trust-item, .pricing-card, .story-car
 // Team member modal functionality
 const teamMembers = {
     1: {
-        name: "Dr. Jessica Davis",
-        role: "Founder & Lead Counselor",
-        bio: "Dr. Jessica Davis brings over 15 years of experience in college admissions counseling. As a former admissions officer at Columbia University, she has insider knowledge of what top universities look for in applicants. She earned her Ph.D. in Education from Stanford University, where her research focused on holistic admissions practices. Jessica is passionate about helping students discover their authentic voice and craft compelling narratives that resonate with admissions committees. She has successfully guided hundreds of students to their dream schools, including Ivy League institutions and top-tier universities worldwide."
+        name: "Justin Chen",
+        role: "WashU in St. Louis",
+        bio: "Justin Chen was accepted Early Decision to Washington University in St. Louis, where he is currently excelling in the McKelvey School of Engineering. He has earned a place on the Dean's List and serves as a Teaching Assistant for Introduction to Computer Science and Introduction to Computer Engineering. Justin's strong academic performance and hands-on teaching experience make him an excellent mentor for students interested in STEM fields and competitive university admissions."
     },
     2: {
-        name: "Michael Park",
-        role: "Senior Counselor",
-        bio: "Michael Park is a seasoned college counselor with extensive experience working in admissions at UC Berkeley and UCLA. He specializes in guiding STEM applicants and international students through the complex college application process. With a deep understanding of both public and private university systems, Michael provides strategic insights into building competitive applications. He is particularly skilled at helping students highlight their research experiences, technical projects, and leadership in STEM fields. Michael graduated from MIT and holds a Master's degree in Higher Education Administration."
+        name: "Alyssa Yang",
+        role: "Duke University",
+        bio: "Alyssa Yang had an exceptional college admissions journey, gaining admission to over 15 prestigious universities including Brown, Northwestern, Duke, Johns Hopkins, Georgia Tech, and Dartmouth. She ultimately chose Duke University, where she continues to thrive academically. Alyssa's experience navigating multiple top-tier admissions processes gives her unique insights into crafting compelling applications and making strategic college choices. She specializes in helping students build diverse, competitive college lists and develop authentic personal narratives."
     },
     3: {
-        name: "Sarah Rodriguez",
-        role: "Essay Coach",
-        bio: "Sarah Rodriguez is a published author and former English teacher with a gift for helping students craft compelling personal narratives. Her expertise lies in developmental editing and helping students find their authentic voice. Sarah has worked with students from diverse backgrounds, helping them transform their experiences into powerful essays that stand out to admissions committees. She holds an MFA in Creative Writing from the Iowa Writers' Workshop and has been featured in numerous literary publications. Sarah's approach combines creative writing techniques with strategic admissions insights."
+        name: "Kathryn Tsai",
+        role: "Johns Hopkins University",
+        bio: "Kathryn Tsai is a student at Johns Hopkins University, one of the world's leading research institutions. Her experience gaining admission to this highly selective university has given her valuable insights into what top-tier admissions committees look for in applicants. Kathryn is passionate about helping students discover their strengths and present them effectively in their applications."
     },
     4: {
-        name: "David Kim",
-        role: "Test Prep Specialist",
-        bio: "David Kim is an expert test prep instructor specializing in SAT, TOEFL, and AP examinations. With over 10 years of tutoring experience, he has helped hundreds of students achieve significant score improvements. David scored in the 99th percentile on the SAT and has developed proprietary strategies for tackling standardized tests. He graduated summa cum laude from Yale University and understands the role test scores play in competitive admissions. David's patient, personalized approach helps students build confidence while mastering test-taking techniques."
+        name: "Esther Tsai",
+        role: "University of Edinburgh",
+        bio: "Esther Tsai attends the University of Edinburgh, one of the UK's most prestigious universities and a member of the Russell Group. Her experience navigating international university admissions provides valuable perspective for students considering studying abroad. Esther understands the unique challenges and opportunities of applying to universities outside the traditional U.S. system and can guide students through both American and international application processes."
     },
     5: {
-        name: "Emily Chen",
-        role: "College Counselor",
-        bio: "Emily Chen is a dedicated college counselor who graduated from 薇閣 high school and earned her degree from Duke University. As a recent graduate, she brings fresh perspectives on current admissions trends and connects easily with students navigating the college process. Emily specializes in helping students from Taiwan understand the nuances of applying to U.S. universities. Her personal experience as an international student gives her unique insights into the challenges and opportunities students face. She is passionate about extracurricular planning and helping students build meaningful activities lists."
+        name: "Derrick Lin",
+        role: "University of Illinois Urbana-Champaign",
+        bio: "Derrick Lin is a standout student at the University of Illinois Urbana-Champaign's prestigious Grainger College of Engineering, where he has earned a place on the Dean's List. He currently serves as the Mechanical Lead for Illini EV Concept, demonstrating his leadership abilities and technical expertise. Derrick's experience in competitive engineering programs and hands-on project leadership makes him an excellent resource for students interested in engineering and technical fields."
     }
 };
 
