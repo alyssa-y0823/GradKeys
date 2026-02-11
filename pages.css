@@ -302,7 +302,7 @@
 .team-grid-custom .team-member:nth-child(4),
 .team-grid-custom .team-member:nth-child(5) {
     width: calc(33.333% - 2rem);
-    max-width: 280px;
+    max-width: 340px;
 }
 
 .team-grid-custom .team-member {

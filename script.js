@@ -122,8 +122,11 @@ document.querySelectorAll('.service-card, .trust-item, .pricing-card, .story-car
 const teamMembers = {
     1: {
         name: "Justin Chen",
-        role: "WashU in St. Louis",
-        bio: "Justin Chen was accepted Early Decision to Washington University in St. Louis, where he is currently excelling in the McKelvey School of Engineering. He has earned a place on the Dean's List and serves as a Teaching Assistant for Introduction to Computer Science and Introduction to Computer Engineering. Justin's strong academic performance and hands-on teaching experience make him an excellent mentor for students interested in STEM fields and competitive university admissions."
+        role: "Washington University in St. Louis",
+        bio: `<p>Justin is a Computer Science student at Washington University in St. Louis. During high school, he served as Chair of Yale Model United Nations Taiwan and became the first student from his school to conduct research at the LOPE Lab at National Taiwan University. He completed the U.S. college application process without hiring a private counselor or professional essay editor, independently developing his application strategy and earning admission to every university he applied to.</p>
+
+        <p>At WashU, Justin serves as a Teaching Assistant for Introduction to Computer Science and Introduction to Computer Engineering, where he taught and mentored over 200 college students through lectures and office hours while emphasizing structured problem-solving and precise reasoning. He is also President and Team Captain of the Badminton Club, one of the ten largest student organizations at the university, where he oversees operations and organized Missouri’s first-ever national-level collegiate badminton tournament. </p>
+        <p>Through his experience navigating the application process independently and teaching at the university level, Justin works with high school applicants on academic planning, application strategy, and essay development with clarity and structure.</p>`
     },
     2: {
         name: "Alyssa Yang",
