@@ -176,6 +176,8 @@
     margin-bottom: 4rem;
     padding-bottom: 4rem;
     border-bottom: 1px solid var(--border);
+    scroll-margin-top: 120px;
+    /* Offset for anchor links to show the number above */
 }
 
 .service-detail:last-child {
@@ -244,24 +246,24 @@
     text-align: center;
 }
 
-.team-photo{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #2f5f8f;
+.team-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #2f5f8f;
 
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.team-photo img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
@@ -279,8 +281,9 @@
     margin-bottom: 0.5rem;
     display: block;
 }
+
 .team-member span.role {
-  font-size: 1.1rem !important;
+    font-size: 1.1rem !important;
 }
 
 .team-member p {
@@ -359,10 +362,12 @@
 
 .team-modal-content {
     background-color: var(--bg-white);
-    padding: 3.5rem 4rem;   /* slightly more breathing room */
+    padding: 3.5rem 4rem;
+    /* slightly more breathing room */
     border-radius: 20px;
 
-    max-width: 900px;       /* was 600px */
+    max-width: 900px;
+    /* was 600px */
     width: 92%;
 
     max-height: 85vh;
@@ -425,47 +430,50 @@
     line-height: 1.8;
     margin-bottom: 1rem;
 }
+
 .modal-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .modal-header-text h2 {
-  margin: 0 0 0.25rem 0;
+    margin: 0 0 0.25rem 0;
 }
 
 .linkedin-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.55rem 0.9rem;
-  border-radius: 999px;
-  text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    text-decoration: none;
 
-  background: rgba(10, 102, 194, 0.08);  /* very light blue */
-  color: #0A66C2;                        /* LinkedIn blue text */
-  border: 1px solid rgba(10, 102, 194, 0.25);
+    background: rgba(10, 102, 194, 0.08);
+    /* very light blue */
+    color: #0A66C2;
+    /* LinkedIn blue text */
+    border: 1px solid rgba(10, 102, 194, 0.25);
 
-  font-weight: 600;
-  transition: 0.2s ease;
+    font-weight: 600;
+    transition: 0.2s ease;
 }
 
 .linkedin-badge svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
 }
 
 .linkedin-badge:hover {
-  background: rgba(10, 102, 194, 0.15);
-  border-color: #0A66C2;
-  transform: translateY(-2px);
+    background: rgba(10, 102, 194, 0.15);
+    border-color: #0A66C2;
+    transform: translateY(-2px);
 }
 
 .modal-bio p {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .values-grid {
@@ -504,7 +512,7 @@
     line-height: 1.7;
 }
 
-/* Success Stories */
+/* Why Us */
 .stories-grid {
     display: grid;
     gap: 3rem;
