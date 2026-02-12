@@ -314,16 +314,17 @@
     transition: var(--transition);
     padding: 1rem;
     border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .team-grid-custom .team-member:hover {
-    background: var(--bg-light);
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.22);
 }
 
-.team-grid-custom .team-member:hover .team-photo {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(26, 77, 122, 0.3);
+.team-grid-custom .team-member:active {
+    transform: scale(0.97);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
 }
 
 /* Team Modal */

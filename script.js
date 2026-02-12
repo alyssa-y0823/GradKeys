@@ -134,7 +134,8 @@ const teamMembers = {
         name: "Alyssa Yang",
         role: "Duke University",
         linkedin: "https://www.linkedin.com/in/alyssayang143/",
-        bio: "Alyssa was admitted to 15+ universities, including Brown, Northwestern, Johns Hopkins, Georgia Tech, and Dartmouth. She is currently a sophomore at Duke University pursuing Computer Science major with a concentration in AI and Machine Learning, along with a minor in Neuroscience and a certificate in Innovation & Entrepreneurship. She ranked first in Wego International Department (薇閣國際部) over six years of middle and high school and graduated with the Taipei Mayor’s Award (市長獎). At Duke, she is on the Dean’s List at the Trinity College of Arts and Sciences, an honor awarded to the top 10% of the student body. Alyssa began tutoring SAT and TOEFL preparation, as well as providing college admissions counseling, in the summer following her high school graduation. Since then, her students have earned admission to top US universities, including the University of Virginia and Emory University."
+        bio: `<p>Alyssa was admitted to 15+ universities, including Brown, Northwestern, Johns Hopkins, Georgia Tech, and Dartmouth. She is currently a sophomore at Duke University pursuing Computer Science major with a concentration in AI and Machine Learning, along with a minor in Neuroscience and a certificate in Innovation & Entrepreneurship. She ranked first in Wego International Department (薇閣國際部) over six years of middle and high school and graduated with the Taipei Mayor’s Award (市長獎). At Duke, she is on the Dean’s List at the Trinity College of Arts and Sciences, an honor awarded to the top 10% of the student body.</p>
+        <p>Alyssa began tutoring SAT and TOEFL preparation, as well as providing college admissions counseling, in the summer following her high school graduation. Since then, her students have earned admission to top US universities, including the University of Virginia and Emory University.</p>`
     },
     3: {
         name: "Kathryn Tsai",
@@ -146,7 +147,12 @@ const teamMembers = {
         name: "Esther Tsai",
         role: "University of Edinburgh",
         linkedin: "https://www.linkedin.com/in/esther-tsai-84443327b/",
-        bio: "Esther Tsai attends the University of Edinburgh, one of the UK's most prestigious universities and a member of the Russell Group. Her experience navigating international university admissions provides valuable perspective for students considering studying abroad. Esther understands the unique challenges and opportunities of applying to universities outside the traditional U.S. system and can guide students through both American and international application processes."
+        bio: `<p>Esther Tsai is a Business with Strategic Economics student at the University of Edinburgh Business School, recipient of the Alexander Darling Prize and the Edinburgh Award, and an incoming exchange student at the Wharton School of the University of Pennsylvania. She serves as a Team Lead at 180 Degrees Consulting Edinburgh, where she has spent two years advising non-profit organizations and early-stage ventures on strategy and operations. She is also the Hedging and Funding Coordinator at Prosper Social Finance, the UK’s first student-led ESG investment fund, where she works on portfolio risk management and capital allocation initiatives.
+        </p>
+        <p>Previously, Esther interned in the CTBC Bank Dealing Room, where she built a fixing-rate automation tool to improve workflow efficiency, contributed to stablecoin and digital asset strategy discussions, and supported equity hedging and backtesting for equity-linked notes. Her experience spans financial markets, quantitative analysis, and applied economic strategy, reflecting a strong integration of theory and practice across institutional and student-led environments.
+        </p>
+        <p>In high school, Esther earned straight A’s while balancing competitive athletics, music, and national academic competitions. She served as Team Captain of the KCIS Triathlon Team, completing nine Olympic-distance triathlons, and was Principal Oboe Player of the KCIS Symphony Orchestra. A Silver Medalist in the International Economics Olympiad, she received advanced training in microeconomics, macroeconomics, and business case analysis, ranked top-16 nationally in Taiwan’s NPSC coding competition, and developed over four years of experience in C++ and Python. Combining analytical rigor with structured communication, she mentors students in competition preparation, academic planning, and strategic university applications. </p>
+        `
     },
     5: {
         name: "Derrick Lin",
