@@ -268,6 +268,7 @@
 .team-member h3 {
     font-family: var(--font-display);
     font-size: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
     color: var(--text-dark);
 }
@@ -275,8 +276,11 @@
 .team-member .role {
     color: var(--accent);
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     display: block;
+}
+.team-member span.role {
+  font-size: 1.1rem !important;
 }
 
 .team-member p {
@@ -302,7 +306,7 @@
 .team-grid-custom .team-member:nth-child(4),
 .team-grid-custom .team-member:nth-child(5) {
     width: calc(33.333% - 2rem);
-    max-width: 280px;
+    max-width: 340px;
 }
 
 .team-grid-custom .team-member {
@@ -310,16 +314,17 @@
     transition: var(--transition);
     padding: 1rem;
     border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .team-grid-custom .team-member:hover {
-    background: var(--bg-light);
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.22);
 }
 
-.team-grid-custom .team-member:hover .team-photo {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(26, 77, 122, 0.3);
+.team-grid-custom .team-member:active {
+    transform: scale(0.97);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
 }
 
 /* Team Modal */
@@ -354,15 +359,16 @@
 
 .team-modal-content {
     background-color: var(--bg-white);
-    padding: 3rem;
-    border-radius: 16px;
-    max-width: 600px;
-    width: 90%;
-    max-height: 80vh;
+    padding: 3.5rem 4rem;   /* slightly more breathing room */
+    border-radius: 20px;
+
+    max-width: 900px;       /* was 600px */
+    width: 92%;
+
+    max-height: 85vh;
     overflow-y: auto;
     position: relative;
-    animation: slideUp 0.3s ease;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
 }
 
 @keyframes slideUp {
@@ -411,13 +417,55 @@
     font-weight: 600;
     font-size: 1.1rem;
     display: block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 #modalBody p {
     color: var(--text-medium);
     line-height: 1.8;
     margin-bottom: 1rem;
+}
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.modal-header-text h2 {
+  margin: 0 0 0.25rem 0;
+}
+
+.linkedin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+
+  background: rgba(10, 102, 194, 0.08);  /* very light blue */
+  color: #0A66C2;                        /* LinkedIn blue text */
+  border: 1px solid rgba(10, 102, 194, 0.25);
+
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.linkedin-badge svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.linkedin-badge:hover {
+  background: rgba(10, 102, 194, 0.15);
+  border-color: #0A66C2;
+  transform: translateY(-2px);
+}
+
+.modal-bio p {
+  margin-bottom: 1rem;
 }
 
 .values-grid {

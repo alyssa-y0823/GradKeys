@@ -122,27 +122,42 @@ document.querySelectorAll('.service-card, .trust-item, .pricing-card, .story-car
 const teamMembers = {
     1: {
         name: "Justin Chen",
-        role: "WashU in St. Louis",
-        bio: "Justin Chen was accepted Early Decision to Washington University in St. Louis, where he is currently excelling in the McKelvey School of Engineering. He has earned a place on the Dean's List and serves as a Teaching Assistant for Introduction to Computer Science and Introduction to Computer Engineering. Justin's strong academic performance and hands-on teaching experience make him an excellent mentor for students interested in STEM fields and competitive university admissions."
+        role: "Washington University in St. Louis",
+        linkedin: "https://www.linkedin.com/in/hung-chi-chen-5b20b1347/",
+
+        bio: `<p>Justin is a Computer Science student at Washington University in St. Louis. During high school, he served as Chair of Yale Model United Nations Taiwan and became the first student from his school to conduct research at the LOPE Lab at National Taiwan University. He completed the U.S. college application process without hiring a private counselor or professional essay editor, independently developing his application strategy and earning admission to every university he applied to.</p>
+
+        <p>At WashU, Justin serves as a Teaching Assistant for Introduction to Computer Science and Introduction to Computer Engineering, where he taught and mentored over 200 college students through lectures and office hours while emphasizing structured problem-solving and precise reasoning. He is also President and Team Captain of the Badminton Club, one of the ten largest student organizations at the university, where he oversees operations and organized Missouri’s first-ever national-level collegiate badminton tournament. </p>
+        <p>Through his experience navigating the application process independently and teaching at the university level, Justin works with high school applicants on academic planning, application strategy, and essay development with clarity and structure.</p>`
     },
     2: {
         name: "Alyssa Yang",
         role: "Duke University",
-        bio: "Alyssa Yang had an exceptional college admissions journey, gaining admission to over 15 prestigious universities including Brown, Northwestern, Duke, Johns Hopkins, Georgia Tech, and Dartmouth. She ultimately chose Duke University, where she continues to thrive academically. Alyssa's experience navigating multiple top-tier admissions processes gives her unique insights into crafting compelling applications and making strategic college choices. She specializes in helping students build diverse, competitive college lists and develop authentic personal narratives."
+        linkedin: "https://www.linkedin.com/in/alyssayang143/",
+        bio: `<p>Alyssa was admitted to 15+ universities, including Brown, Northwestern, Johns Hopkins, Georgia Tech, and Dartmouth. She is currently a sophomore at Duke University pursuing Computer Science major with a concentration in AI and Machine Learning, along with a minor in Neuroscience and a certificate in Innovation & Entrepreneurship. She ranked first in Wego International Department (薇閣國際部) over six years of middle and high school and graduated with the Taipei Mayor’s Award (市長獎). At Duke, she is on the Dean’s List at the Trinity College of Arts and Sciences, an honor awarded to the top 10% of the student body.</p>
+        <p>Alyssa began tutoring SAT and TOEFL preparation, as well as providing college admissions counseling, in the summer following her high school graduation. Since then, her students have earned admission to top US universities, including the University of Virginia and Emory University.</p>`
     },
     3: {
         name: "Kathryn Tsai",
         role: "Johns Hopkins University",
+        linkedin: "https://www.linkedin.com/in/kathryn-tsai-88a0a2266/",
         bio: "Kathryn Tsai is a student at Johns Hopkins University, one of the world's leading research institutions. Her experience gaining admission to this highly selective university has given her valuable insights into what top-tier admissions committees look for in applicants. Kathryn is passionate about helping students discover their strengths and present them effectively in their applications."
     },
     4: {
         name: "Esther Tsai",
         role: "University of Edinburgh",
-        bio: "Esther Tsai attends the University of Edinburgh, one of the UK's most prestigious universities and a member of the Russell Group. Her experience navigating international university admissions provides valuable perspective for students considering studying abroad. Esther understands the unique challenges and opportunities of applying to universities outside the traditional U.S. system and can guide students through both American and international application processes."
+        linkedin: "https://www.linkedin.com/in/esther-tsai-84443327b/",
+        bio: `<p>Esther Tsai is a Business with Strategic Economics student at the University of Edinburgh Business School, recipient of the Alexander Darling Prize and the Edinburgh Award, and an incoming exchange student at the Wharton School of the University of Pennsylvania. She serves as a Team Lead at 180 Degrees Consulting Edinburgh, where she has spent two years advising non-profit organizations and early-stage ventures on strategy and operations. She is also the Hedging and Funding Coordinator at Prosper Social Finance, the UK’s first student-led ESG investment fund, where she works on portfolio risk management and capital allocation initiatives.
+        </p>
+        <p>Previously, Esther interned in the CTBC Bank Dealing Room, where she built a fixing-rate automation tool to improve workflow efficiency, contributed to stablecoin and digital asset strategy discussions, and supported equity hedging and backtesting for equity-linked notes. Her experience spans financial markets, quantitative analysis, and applied economic strategy, reflecting a strong integration of theory and practice across institutional and student-led environments.
+        </p>
+        <p>In high school, Esther earned straight A’s while balancing competitive athletics, music, and national academic competitions. She served as Team Captain of the KCIS Triathlon Team, completing nine Olympic-distance triathlons, and was Principal Oboe Player of the KCIS Symphony Orchestra. A Silver Medalist in the International Economics Olympiad, she received advanced training in microeconomics, macroeconomics, and business case analysis, ranked top-16 nationally in Taiwan’s NPSC coding competition, and developed over four years of experience in C++ and Python. Combining analytical rigor with structured communication, she mentors students in competition preparation, academic planning, and strategic university applications. </p>
+        `
     },
     5: {
         name: "Derrick Lin",
         role: "University of Illinois Urbana-Champaign",
+        linkedin: "https://www.linkedin.com/in/derrick-lin-45b5a52a2/",
         bio: "Derrick Lin is a standout student at the University of Illinois Urbana-Champaign's prestigious Grainger College of Engineering, where he has earned a place on the Dean's List. He currently serves as the Mechanical Lead for Illini EV Concept, demonstrating his leadership abilities and technical expertise. Derrick's experience in competitive engineering programs and hands-on project leadership makes him an excellent resource for students interested in engineering and technical fields."
     }
 };
@@ -159,11 +174,30 @@ if (modal && modalBody) {
             const memberData = teamMembers[memberId];
 
             if (memberData) {
+                const linkedinHTML = memberData.linkedin
+                    ? `
+                    <a class="linkedin-badge" href="${memberData.linkedin}" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    `
+                    : "";
+
                 modalBody.innerHTML = `
-                    <h2>${memberData.name}</h2>
-                    <span class="modal-role">${memberData.role}</span>
-                    <p>${memberData.bio}</p>
+                    <div class="modal-header">
+                    <div class="modal-header-text">
+                        <h2>${memberData.name}</h2>
+                        <span class="modal-role">${memberData.role}</span>
+                    </div>
+                    ${linkedinHTML}
+                    </div>
+                    <div class="modal-bio">
+                    ${memberData.bio}
+                    </div>
                 `;
+
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
             }
