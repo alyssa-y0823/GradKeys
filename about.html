@@ -1,266 +1,371 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - GradKeys</title>
+    <meta
+      name="description"
+      content="Meet the GradKeys team. Expert college counselors dedicated to your success."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - GradKeys</title>
-  <meta name="description" content="Meet the GradKeys team. Expert college counselors dedicated to your success." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="pages.css" />
-</head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2L4 9V15C4 22.18 9.84 28.54 16 30C22.16 28.54 28 22.18 28 15V9L16 2Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16 10V20M11 15L16 20L21 15"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span>GradKeys</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html" class="btn-nav">Get Started</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
 
-<body>
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 2L4 9V15C4 22.18 9.84 28.54 16 30C22.16 28.54 28 22.18 28 15V9L16 2Z" stroke="currentColor"
-            stroke-width="2" stroke-linejoin="round" />
-          <path d="M16 10V20M11 15L16 20L21 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-        <span>GradKeys</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="why-us.html">Why Us</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contact.html" class="btn-nav">Get Started</a></li>
-      </ul>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Mission</h1>
+        <p>
+          To turn firsthand success into strategic advantage for the next
+          generation of applicants.
+        </p>
+      </div>
+    </section>
 
-  <section class="page-header">
-    <div class="container">
-      <h1>Our Mission</h1>
-      <p>
-        Empowering every student to unlock their full potential and achieve
-        their college dreams
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Meet Our Team</h2>
-      <div class="team-grid-custom">
-        <div class="team-member" data-member="1">
-          <div class="team-photo">
-            <img src="JustinC.png" alt="Justin Chen" />
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Meet Our Team</h2>
+        <div class="team-grid-custom">
+          <div class="team-member" data-member="1">
+            <div class="team-photo">
+              <img src="JustinC.png" alt="Justin Chen" />
+            </div>
+            <h3>Justin Chen</h3>
+            <span class="role">Washington University in St. Louis</span>
+            <p>B.S. in Computer Science</p>
           </div>
-          <h3>Justin Chen</h3>
-          <span class="role">Washington University in St. Louis</span>
-          <p>B.S. in Computer Science</p>
-        </div>
-        <div class="team-member" data-member="2">
-          <div class="team-photo">
-            <img src="Alyssa.png" alt="Alyssa Yang" />
+          <div class="team-member" data-member="2">
+            <div class="team-photo">
+              <img src="Alyssa.png" alt="Alyssa Yang" />
+            </div>
+            <h3>Alyssa Yang</h3>
+            <span class="role">Duke University</span>
+            <p>B.S. in Computer Science</p>
           </div>
-          <h3>Alyssa Yang</h3>
-          <span class="role">Duke University</span>
-          <p>B.S. in Computer Science</p>
-        </div>
-        <div class="team-member" data-member="3">
-          <div class="team-photo">KT</div>
-          <h3>Kathryn Tsai</h3>
-          <span class="role">Johns Hopkins University</span>
-          <p>B.S. in Chemical and Biomolecular Engineering</p>
-        </div>
-        <div class="team-member" data-member="4">
-          <div class="team-photo">
-            <img src="Esther.png" alt="Esther Tsai" />
+          <div class="team-member" data-member="3">
+            <div class="team-photo">
+              <img src="Kathryn.png" alt="Kathryn Tsai" />
+            </div>
+            <h3>Kathryn Tsai</h3>
+            <span class="role">Johns Hopkins University</span>
+            <p>B.S. in Chemical and Biomolecular Engineering</p>
           </div>
-          <h3>Esther Tsai</h3>
-          <span class="role">University of Edinburgh</span>
-          <p>M.A. in Business with Strategic Economics</p>
-        </div>
-        <div class="team-member" data-member="5">
-          <div class="team-photo">
-            <img src="Derrick.png" alt="Derrick Lin" />
+          <div class="team-member" data-member="4">
+            <div class="team-photo">
+              <img src="Esther.png" alt="Esther Tsai" />
+            </div>
+            <h3>Esther Tsai</h3>
+            <span class="role">University of Edinburgh</span>
+            <p>M.A. in Business with Strategic Economics</p>
           </div>
-          <h3>Derrick Lin</h3>
-          <span class="role">University of Illinois Urbana-Champaign</span>
-          <p>B.S. in Mechanical Engineering</p>
+          <div class="team-member" data-member="5">
+            <div class="team-photo">
+              <img src="Derrick.png" alt="Derrick Lin" />
+            </div>
+            <h3>Derrick Lin</h3>
+            <span class="role">University of Illinois Urbana-Champaign</span>
+            <p>B.S. in Mechanical Engineering</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" style="background: var(--bg-white)">
-    <div class="container">
-      <div style="max-width: 800px; margin: 0 auto">
-        <h2 style="
+    <section class="section" style="background: var(--bg-white)">
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto">
+          <h2
+            style="
               font-family: var(--font-display);
               font-size: 2.5rem;
               margin-bottom: 2rem;
               color: var(--text-dark);
-            ">
-          Who We Are
-        </h2>
-        <p style="
+            "
+          >
+            Who We Are
+          </h2>
+          <p
+            style="
               font-size: 1.15rem;
               color: var(--text-medium);
               line-height: 1.8;
               margin-bottom: 1.5rem;
-            ">
-          GradKeys emerged from a simple belief: every student deserves
-          personalized guidance to navigate the increasingly complex college
-          admissions landscape. We've helped over 500 students gain admission
-          to their dream schools, from Ivy League institutions to specialized
-          programs at top universities nationwide.
-        </p>
-        <p style="
+            "
+          >
+            GradKeys was founded on a simple belief: the most relevant college
+            guidance should come from people who have just navigated the process
+            themselves and are now thriving inside the very institutions
+            students aspire to join.
+          </p>
+          <p
+            style="
               font-size: 1.15rem;
               color: var(--text-medium);
               line-height: 1.8;
               margin-bottom: 1.5rem;
-            ">
-          Our team brings together former admissions officers, experienced
-          educators, and college counseling experts who understand what it
-          takes to stand out in a competitive applicant pool. We don't just
-          help students get into college—we help them discover who they are
-          and what they want to pursue.
-        </p>
-        <p style="
+            "
+          >
+            After going through the admissions journey ourselves, we realized
+            how much of the process is misunderstood. Many students are told
+            what looks impressive on paper, but not what truly resonates with
+            admissions committees. There is often a gap between generic advice
+            and what universities are actually seeking in their incoming
+            classes.
+          </p>
+          <p
+            style="
               font-size: 1.15rem;
               color: var(--text-medium);
               line-height: 1.8;
-            ">
-          What sets us apart is our commitment to seeing the whole student. We
-          recognize that college admissions isn't just about grades and test
-          scores—it's about crafting a narrative that authentically represents
-          your passions, experiences, and potential.
-        </p>
+              margin-bottom: 1.5rem;
+            "
+          >
+            We experienced that gap firsthand, so that is why we founded
+            GradKeys.
+          </p>
+          <p
+            style="
+              font-size: 1.15rem;
+              color: var(--text-medium);
+              line-height: 1.8;
+              margin-bottom: 1.5rem;
+            "
+          >
+            We are five current undergraduate students from leading universities
+            around the world who have walked the admissions journey recently and
+            successfully. However, our perspective is shaped not only by
+            acceptance letters, but by what follows. We sit in the lectures. We
+            build relationships with professors. We participate in seminars. We
+            work alongside ambitious peers from around the world. We understand
+            the academic culture, the expectations, and the unspoken standards
+            that distinguish strong applicants from truly compelling ones.
+          </p>
+          <p
+            style="
+              font-size: 1.15rem;
+              color: var(--text-medium);
+              line-height: 1.8;
+            "
+          >
+            We are not simply advisors looking from the outside in.
+          </p>
+          <p
+            style="
+              font-size: 1.15rem;
+              color: var(--text-medium);
+              line-height: 1.8;
+              margin-bottom: 1.5rem;
+            "
+          >
+            We are the results of the strategies we teach.
+          </p>
+          <p
+            style="
+              font-size: 1.15rem;
+              color: var(--text-medium);
+              line-height: 1.8;
+              font-weight: bold;
+            "
+          >
+            That is what makes GradKeys different.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Our Values</h2>
-      <div class="values-grid">
-        <div class="value-item">
-          <div class="value-icon">🎯</div>
-          <h3>Personalized Approach</h3>
-          <p>
-            No two students are alike. We tailor our guidance to your unique
-            strengths, goals, and circumstances.
-          </p>
-        </div>
-        <div class="value-item">
-          <div class="value-icon">🤝</div>
-          <h3>Authentic Partnership</h3>
-          <p>
-            We build relationships based on trust, working collaboratively
-            with students and families throughout the journey.
-          </p>
-        </div>
-        <div class="value-item">
-          <div class="value-icon">📚</div>
-          <h3>Expert Insight</h3>
-          <p>
-            Our team stays current with admissions trends, ensuring you
-            benefit from the latest strategies and knowledge.
-          </p>
-        </div>
-        <div class="value-item">
-          <div class="value-icon">💡</div>
-          <h3>Holistic Success</h3>
-          <p>
-            We focus on more than acceptances—we help you find the right fit
-            for your academic and personal growth.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team Member Modal -->
-  <div id="teamModal" class="team-modal">
-    <div class="team-modal-content">
-      <span class="team-modal-close">&times;</span>
-      <div id="modalBody"></div>
-    </div>
-  </div>
-
-  <section class="section cta-section">
-    <div class="container">
-      <div class="cta-box">
-        <h2>Ready to Work With Us?</h2>
-        <p>
-          Schedule a free consultation to learn how we can support your
-          college journey.
-        </p>
-        <a href="contact.html" class="btn btn-primary btn-large">Get Started Today</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="footer-logo">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 2L4 9V15C4 22.18 9.84 28.54 16 30C22.16 28.54 28 22.18 28 15V9L16 2Z" stroke="currentColor"
-                stroke-width="2" stroke-linejoin="round" />
-              <path d="M16 10V20M11 15L16 20L21 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-            <span>GradKeys</span>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Our Values</h2>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon">🎯</div>
+            <h3>Expert Insights</h3>
+            <p>
+              We guide from inside the universities students aspire to join,
+              offering current and relevant admissions perspectives.
+            </p>
           </div>
-          <p>
-            Empowering students to unlock their full potential and achieve
-            their college dreams.
-          </p>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html#college-list">College List Strategy</a></li>
-            <li><a href="services.html#test-prep">SAT/TOEFL Tutoring</a></li>
-            <li><a href="services.html#essay-review">Essay Review</a></li>
-            <li><a href="services.html#extracurricular">Extracurricular Consulting</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="why-us.html">Why Us</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="mailto:info@gradkeys.org">info@gradkeys.org</a></li>
-            <li><a href="https://line.me/R/ti/p/{LINE ID}">Line</a></li>
-            <li><a href="https://www.instagram.com/gradkeys/">Instagram</a></li>
-          </ul>
+          <div class="value-item">
+            <div class="value-icon">🤝</div>
+            <h3>Global Perspective</h3>
+            <p>
+              Our team maintains connections across Top 50 universities
+              worldwide, providing informed, cross-system insight.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">📚</div>
+            <h3>Experience-Driven Mentorship</h3>
+            <p>
+              We recommend pathways we have personally tested and refined
+              through our own journeys.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">💡</div>
+            <h3>Authentic Positioning</h3>
+            <p>
+              Every student receives a tailored roadmap built around their
+              strengths, goals, and authentic interests.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">💡</div>
+            <h3>Proven Outcomes</h3>
+            <p>
+              We are the results of the strategies we teach, and our success
+              reflects the process we share.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 GradKeys. All rights reserved.</p>
+    </section>
+
+    <!-- Team Member Modal -->
+    <div id="teamModal" class="team-modal">
+      <div class="team-modal-content">
+        <span class="team-modal-close">&times;</span>
+        <div id="modalBody"></div>
       </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Work With Us?</h2>
+          <p>
+            Schedule a free consultation to learn how we can support your
+            college journey.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-large"
+            >Get Started Today</a
+          >
+        </div>
+      </div>
+    </section>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2L4 9V15C4 22.18 9.84 28.54 16 30C22.16 28.54 28 22.18 28 15V9L16 2Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 10V20M11 15L16 20L21 15"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>GradKeys</span>
+            </div>
+            <p>
+              Empowering students to unlock their full potential and achieve
+              their college dreams.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li>
+                <a href="services.html#college-list">College List Strategy</a>
+              </li>
+              <li><a href="services.html#test-prep">SAT/TOEFL Tutoring</a></li>
+              <li><a href="services.html#essay-review">Essay Review</a></li>
+              <li>
+                <a href="services.html#extracurricular"
+                  >Extracurricular Consulting</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="why-us.html">Why Us</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="mailto:info@gradkeys.org">info@gradkeys.org</a></li>
+              <li><a href="https://line.me/R/ti/p/{LINE ID}">Line</a></li>
+              <li>
+                <a href="https://www.instagram.com/gradkeys/">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 GradKeys. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
