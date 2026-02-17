@@ -638,56 +638,114 @@
     font-size: 0.9rem;
 }
 
-/* Contact Page */
+/* Contact Page — Full Width Get in Touch */
+
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
+  display: block;
+  padding: 36px 0 28px;
+  padding-top: 5px;
+}
+
+.section:has(.contact-content) {
+  padding-top: 20px;
+}
+.contact-info {
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 .contact-info h2 {
-    font-family: var(--font-display);
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-dark);
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  margin-bottom: 0.9rem;
+  color: var(--text-dark);
 }
 
-.contact-info p {
-    color: var(--text-medium);
-    line-height: 1.8;
-    margin-bottom: 2rem;
+.contact-info > p {
+  max-width: 70ch;
+  color: var(--text-medium);
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
 }
 
+/* group everything into a single card */
+.contact-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.05);
+}
+
+/* make rows scannable */
 .contact-methods {
-    list-style: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-methods li {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 18px;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
 }
-
 .contact-methods li:last-child {
     border-bottom: none;
 }
 
 .contact-methods strong {
-    display: block;
-    color: var(--text-dark);
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.contact-methods a,
+.contact-methods span {
+  color: var(--text-medium);
+  line-height: 1.6;
 }
 
 .contact-methods a {
-    color: var(--primary);
-    text-decoration: none;
-    transition: var(--transition);
+  color: var(--primary);
+  text-decoration: none;
 }
 
 .contact-methods a:hover {
-    color: var(--primary-dark);
+  color: var(--primary-dark);
 }
+
+/* what to expect as a continuation of the card */
+.what-to-expect {
+    margin-top: 4px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+}
+
+
+.what-to-expect h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+}
+
+.what-to-expect p {
+  margin: 0;
+  color: var(--text-medium);
+  line-height: 1.8;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .contact-methods li {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
 
 .form-container {
     background: var(--bg-white);
@@ -797,4 +855,53 @@
     .faq-item.active .faq-answer {
         padding: 0 1.5rem 1.25rem 1.5rem;
     }
+}
+
+/* More space under subtitle */
+.page-header p {
+  margin-bottom: 40px;
+}
+
+/* Booking section spacing */
+.booking-section {
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+/* Calendar container */
+.booking-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+/* Section label */
+.booking-title {
+  font-family: var(--font-display);
+  font-size: 1.9rem;      /* bigger */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+
+
+/* Slightly shrink Google calendar */
+.booking-iframe-scale {
+  transform: scale(0.94);
+  transform-origin: top center;
+  width: 106.4%;
+  margin-left: -3.2%;
+}
+
+/* Control height */
+.booking-iframe-scale iframe {
+  width: 100%;
+  height: 900px;
+  border: 0;
 }
