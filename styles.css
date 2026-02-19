@@ -733,7 +733,10 @@ body {
 .faq-answer p {
     color: var(--text-medium);
     line-height: 1.8;
-    margin: 0;
+    margin: 0 0 24px 0;
+}
+.faq-answer p:last-child {
+  margin-bottom: 0;
 }
 
 /* Responsive Design */
