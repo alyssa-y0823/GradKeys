@@ -251,38 +251,45 @@ document.querySelectorAll('.faq-question').forEach(question => {
     });
 });
 
-// Auto-scroll Values (infinite loop)
+// Values: seamless infinite auto-scroll (last card loops back to first)
 (() => {
   const track = document.querySelector(".values-grid");
   if (!track) return;
 
-  // Only run if there is something to scroll
+  const items = Array.from(track.children);
+  if (!items.length) return;
+
+  // Measure the width of the original content (before cloning)
+  const originalScrollWidth = track.scrollWidth;
+
+  // Clone all cards once to create a seamless loop
+  items.forEach((node) => {
+    const clone = node.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    track.appendChild(clone);
+  });
+
+  // If still no overflow, stop
   if (track.scrollWidth <= track.clientWidth) return;
 
-  const speed = 1; // px per frame (0.3 slow, 0.6 normal, 1.2 fast)
-  let rafId;
+  const speed = 1.75; //speed control, here
   let paused = false;
 
   const step = () => {
     if (!paused) {
       track.scrollLeft += speed;
 
-      // when reaching end, jump back to start
-      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 1) {
-        track.scrollLeft = 0;
+      // When we pass the end of the original set, wrap back seamlessly
+      if (track.scrollLeft >= originalScrollWidth) {
+        track.scrollLeft -= originalScrollWidth;
       }
     }
-    rafId = requestAnimationFrame(step);
+    requestAnimationFrame(step);
   };
 
-  // pause on hover
   track.addEventListener("mouseenter", () => (paused = true));
   track.addEventListener("mouseleave", () => (paused = false));
+  document.addEventListener("visibilitychange", () => (paused = document.hidden));
 
-  // pause when tab not visible
-  document.addEventListener("visibilitychange", () => {
-    paused = document.hidden;
-  });
-
-  rafId = requestAnimationFrame(step);
+  requestAnimationFrame(step);
 })();
