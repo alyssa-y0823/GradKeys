@@ -491,10 +491,6 @@
   scrollbar-width: none;
 }
 .values-grid::-webkit-scrollbar{ display:none; }
-/* .values-grid.is-dragging {
-  cursor: grabbing;
-  scroll-snap-type: none;
-} */
 
 /* turn each item into a “card” */
 .value-item {
@@ -508,7 +504,6 @@
   box-shadow: 0 12px 26px rgba(0,0,0,0.08);
 }
 
-/* keep your icon + typography, minor alignment change */
 .value-icon {
   width: 60px;
   height: 60px;
