@@ -250,3 +250,39 @@ document.querySelectorAll('.faq-question').forEach(question => {
         }
     });
 });
+
+// Auto-scroll Values (infinite loop)
+(() => {
+  const track = document.querySelector(".values-grid");
+  if (!track) return;
+
+  // Only run if there is something to scroll
+  if (track.scrollWidth <= track.clientWidth) return;
+
+  const speed = 1; // px per frame (0.3 slow, 0.6 normal, 1.2 fast)
+  let rafId;
+  let paused = false;
+
+  const step = () => {
+    if (!paused) {
+      track.scrollLeft += speed;
+
+      // when reaching end, jump back to start
+      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 1) {
+        track.scrollLeft = 0;
+      }
+    }
+    rafId = requestAnimationFrame(step);
+  };
+
+  // pause on hover
+  track.addEventListener("mouseenter", () => (paused = true));
+  track.addEventListener("mouseleave", () => (paused = false));
+
+  // pause when tab not visible
+  document.addEventListener("visibilitychange", () => {
+    paused = document.hidden;
+  });
+
+  rafId = requestAnimationFrame(step);
+})();
