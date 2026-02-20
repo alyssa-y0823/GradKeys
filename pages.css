@@ -484,7 +484,7 @@
   grid-auto-columns: 360px;   /* card width */
   gap: 2.5rem;
 
-  overflow-x: auto;
+  overflow-x: none;
   overflow-y: hidden;
 
   padding: 0.5rem 0.25rem 1rem;
