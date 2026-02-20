@@ -256,32 +256,32 @@ document.querySelectorAll('.faq-question').forEach(question => {
   const track = document.querySelector(".values-grid");
   if (!track) return;
 
-  const items = Array.from(track.children);
-  if (!items.length) return;
-
-  // Measure the width of the original content (before cloning)
-  const originalScrollWidth = track.scrollWidth;
-
-  // Clone all cards once to create a seamless loop
-  items.forEach((node) => {
-    const clone = node.cloneNode(true);
-    clone.setAttribute("aria-hidden", "true");
-    track.appendChild(clone);
-  });
-
-  // If still no overflow, stop
-  if (track.scrollWidth <= track.clientWidth) return;
-
-  const speed = 1.75; //speed control, here
+  const speed = 2; // increase for faster
   let paused = false;
+
+  // Get the horizontal gap between cards (grid column-gap)
+  const getGap = () => {
+    const cs = window.getComputedStyle(track);
+    const gap = cs.columnGap || cs.gap || "0px";
+    return parseFloat(gap) || 0;
+  };
+
+  let gap = getGap();
+  window.addEventListener("resize", () => { gap = getGap(); });
 
   const step = () => {
     if (!paused) {
       track.scrollLeft += speed;
 
-      // When we pass the end of the original set, wrap back seamlessly
-      if (track.scrollLeft >= originalScrollWidth) {
-        track.scrollLeft -= originalScrollWidth;
+      const first = track.firstElementChild;
+      if (first) {
+        const firstWidth = first.getBoundingClientRect().width;
+
+        // If we've scrolled past the first card, move it to the end
+        if (track.scrollLeft >= firstWidth + gap) {
+          track.appendChild(first);
+          track.scrollLeft -= (firstWidth + gap);
+        }
       }
     }
     requestAnimationFrame(step);
