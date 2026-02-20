@@ -146,7 +146,7 @@ const teamMembers = {
         name: "Esther Tsai",
         role: "University of Edinburgh",
         linkedin: "https://www.linkedin.com/in/esther-tsai-84443327b/",
-        bio: `<p>Esther Tsai is a Business with Strategic Economics student at the University of Edinburgh Business School, and an incoming exchange student at the Wharton School of the University of Pennsylvania.
+        bio: `<p>Esther is a Business with Strategic Economics student at the University of Edinburgh Business School, and an incoming exchange student at the Wharton School of the University of Pennsylvania.
         </p>
         <p>She serves as a Team Lead at 180 Degrees Consulting Edinburgh, with two years of experience advising non-profit organizations and early-stage ventures. Esther is also a Hedging and Funding Coordinator at Prosper Social Finance, the UK’s first student-led ESG investment fund. 
         </p>
