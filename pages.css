@@ -517,6 +517,26 @@
   color: white;
   font-size: 1.5rem;
 }
+/* Card backgrounds */
+.value-item[data-variant="1"] { 
+  background: #E9F2FF;   /* soft blue */
+}
+
+.value-item[data-variant="2"] { 
+  background: #F5EFE6;   /* warm sand */
+}
+
+.value-item[data-variant="3"] { 
+  background: #F1ECFA;   /* soft lavender */
+}
+
+.value-item[data-variant="4"] { 
+  background: #EAF7F1;   /* soft mint */
+}
+
+.value-item[data-variant="5"] { 
+  background: #FFF4E6;   /* soft peach */
+}
 
 .value-item h3 {
   font-family: var(--font-display);
