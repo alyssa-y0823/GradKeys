@@ -140,7 +140,10 @@ const teamMembers = {
         name: "Kathryn Tsai",
         role: "Johns Hopkins University",
         linkedin: "https://www.linkedin.com/in/kathryn-tsai-88a0a2266/",
-        bio: "Kathryn Tsai is a student at Johns Hopkins University, one of the world's leading research institutions. Her experience gaining admission to this highly selective university has given her valuable insights into what top-tier admissions committees look for in applicants. Kathryn is passionate about helping students discover their strengths and present them effectively in their applications."
+        bio: `<p>Kathryn is currently a pre-med sophomore pursuing a degree in Chemical and Biomolecular Engineering with a minor in Financial Management and Accounting at Johns Hopkins University. </p>
+        <p>Born and raised in Taipei, Taiwan, Kathryn was a straight-A high honor roll student at Taipei Wego Senior High, keen on public speaking and STEM. Her model UN and speech career started in junior high, and she has participated, chaired, and hosted 40+ conferences both in Taiwan and internationally. Research-wise, she developed cardiovascular disease-related biomechanistic cures at National Taiwan University throughout high school. At the same time, she served a crucial role in the wet lab in her school’s iGEM (International Genetically Engineered Machine) team for two consecutive years. </p>
+        <p>In Hopkins, her research career continued. She is currently working as an undergraduate research assistant investigating the role of cholesterol ester in obese patients with cases of heart failures. At the Whiting School of Engineering, she has been on the Dean’s List since her freshman year. </p>
+        <p>Kathryn’s tutoring experiences started in the very last year of high school, and she’s been tutoring standardised testings as well as college counseling. </p>`
     },
     4: {
         name: "Esther Tsai",
