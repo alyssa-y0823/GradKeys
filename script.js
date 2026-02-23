@@ -256,7 +256,7 @@ document.querySelectorAll('.faq-question').forEach(question => {
   const track = document.querySelector(".values-grid");
   if (!track) return;
 
-  const speed = 2; // increase for faster
+  const speed = 1.5; // increase for faster
   let paused = false;
 
   // Get the horizontal gap between cards (grid column-gap)
