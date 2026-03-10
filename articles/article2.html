@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="logo_transparent.png" />
+    <link rel="icon" type="image/png" href="../logo_transparent.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What I Wish I Knew in High School - GradKeys</title>
@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../pages.css" />
     <style>
       .article-hero {
         background: linear-gradient(
@@ -559,6 +559,19 @@
           padding: 3rem 1.25rem 5rem;
         }
       }
+      .author-avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+
+      .author-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     </style>
   </head>
 
@@ -567,21 +580,21 @@
 
     <nav class="navbar">
       <div class="container nav-container">
-        <a href="index.html" class="logo">
+        <a href="../index.html" class="logo">
           <img
-            src="logo_transparent.png"
+            src="../logo_transparent.png"
             alt="GradKeys Logo"
             class="logo-img"
           />
           <span>GradKeys</span>
         </a>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="why-us.html">Why Us</a></li>
-          <li><a href="resources.html" class="active">Resources</a></li>
-          <li><a href="contact.html" class="btn-nav">Get Started</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../why-us.html">Why Us</a></li>
+          <li><a href="../resources.html" class="active">Resources</a></li>
+          <li><a href="../contact.html" class="btn-nav">Get Started</a></li>
         </ul>
         <button class="mobile-menu-toggle" aria-label="Toggle menu">
           <span></span>
@@ -593,7 +606,7 @@
 
     <header class="article-hero">
       <div class="article-hero-inner">
-        <a href="resources.html" class="back-link">← Back to Resources</a>
+        <a href="../resources.html" class="back-link">← Back to Resources</a>
         <div class="article-tag">College Advice</div>
         <h1>What I Wish I Knew in High School</h1>
         <p class="article-subtitle">
@@ -606,7 +619,9 @@
           mattered most.
         </p>
         <div class="article-byline">
-          <div class="author-avatar">JC</div>
+          <div class="author-avatar">
+            <img src="../JustinC.png" alt="Justin Chen" />
+          </div>
           <div class="byline-text">
             <span class="byline-name">Justin Chen</span>
             <span class="byline-meta">GradKeys Counselor</span>
@@ -614,7 +629,7 @@
           <div class="byline-sep"></div>
           <span class="byline-stat">March 2026</span>
           <div class="byline-sep"></div>
-          <span class="byline-stat">10 min read</span>
+          <span class="byline-stat">6 min read</span>
         </div>
       </div>
     </header>
@@ -888,25 +903,25 @@
 
           <div class="sidebar-card">
             <h4>More Articles</h4>
-            <a href="top-5-mistakes-essay.html" class="related-article">
+            <a href="article1.html" class="related-article">
               <span class="related-title"
                 >Top 5 Mistakes You Need to Avoid in Your Essay</span
               >
-              <span class="related-meta">Alyssa Yang · 8 min read</span>
+              <span class="related-meta">Alyssa Yang · 10 min read</span>
             </a>
-            <a href="resources.html" class="related-article">
+            <a href="../resources.html" class="related-article">
               <span class="related-title"
                 >The Ultimate Guide to UK University Applications</span
               >
               <span class="related-meta">Esther Tsai · 15 min read</span>
             </a>
-            <a href="resources.html" class="related-article">
+            <a href="../resources.html" class="related-article">
               <span class="related-title"
                 >Are U.S. Colleges Really for Everyone?</span
               >
               <span class="related-meta">Derrick Lin · 12 min read</span>
             </a>
-            <a href="resources.html" class="related-article">
+            <a href="../resources.html" class="related-article">
               <span class="related-title"
                 >I Came to the U.S. for Pre-Med — Here's What It's Actually
                 Like</span
@@ -926,7 +941,7 @@
             Our counselors help students build strong applications with
             strategy, clarity, and personalized support.
           </p>
-          <a href="contact.html" class="btn btn-primary btn-large"
+          <a href="../contact.html" class="btn btn-primary btn-large"
             >Work With Our Experts</a
           >
         </div>
@@ -970,12 +985,16 @@
             <h4>Services</h4>
             <ul>
               <li>
-                <a href="services.html#college-list">College List Strategy</a>
+                <a href="../services.html#college-list"
+                  >College List Strategy</a
+                >
               </li>
-              <li><a href="services.html#test-prep">SAT/TOEFL Tutoring</a></li>
-              <li><a href="services.html#essay-review">Essay Review</a></li>
               <li>
-                <a href="services.html#extracurricular"
+                <a href="../services.html#test-prep">SAT/TOEFL Tutoring</a>
+              </li>
+              <li><a href="../services.html#essay-review">Essay Review</a></li>
+              <li>
+                <a href="../services.html#extracurricular"
                   >Extracurricular Consulting</a
                 >
               </li>
@@ -984,10 +1003,10 @@
           <div class="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="why-us.html">Why Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../services.html">Services</a></li>
+              <li><a href="../why-us.html">Why Us</a></li>
+              <li><a href="../contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">
