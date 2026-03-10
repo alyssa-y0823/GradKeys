@@ -765,6 +765,19 @@
         height: 100%;
         object-fit: cover;
       }
+      .author-card-avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+
+      .author-card-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     </style>
   </head>
 
@@ -1117,7 +1130,9 @@
 
           <!-- Author card -->
           <div class="author-card">
-            <div class="author-card-avatar">AY</div>
+            <div class="author-card-avatar">
+              <img src="../Alyssa.png" alt="Alyssa Yang" />
+            </div>
             <div class="author-card-info">
               <strong>Alyssa Yang</strong>
               <span>GradKeys Co-Founder · Duke University</span>
