@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="logo_transparent.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What I Wish I Knew in High School - GradKeys</title>
+    <meta
+      name="description"
+      content="A reflective guide for students applying to college in the United States, covering extracurriculars, GPA, mentorship, responsibility, and mindset."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <style>
+      .article-hero {
+        background: linear-gradient(
+          135deg,
+          #f8f6f3 0%,
+          #ffffff 60%,
+          #f0ebe5 100%
+        );
+        padding: 10rem 2rem 5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .article-hero-inner {
+        max-width: 830px;
+        margin: 0 auto;
+      }
+
+      .article-tag {
+        display: inline-block;
+        background: var(--accent-light);
+        color: var(--primary);
+        padding: 0.3rem 0.9rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        margin-bottom: 1.25rem;
+      }
+
+      .article-hero h1 {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        line-height: 1.2;
+        color: var(--text-dark);
+        margin-bottom: 1.25rem;
+      }
+
+      .article-subtitle {
+        font-size: 1.08rem;
+        color: var(--text-medium);
+        line-height: 1.8;
+        max-width: 760px;
+        margin-bottom: 2rem;
+      }
+
+      .article-byline {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .author-avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          var(--primary-light),
+          var(--primary-dark)
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: var(--font-display);
+        font-size: 1.1rem;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+
+      .byline-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+      }
+
+      .byline-name {
+        font-weight: 600;
+        color: var(--text-dark);
+        font-size: 0.95rem;
+      }
+
+      .byline-meta {
+        color: var(--text-light);
+        font-size: 0.85rem;
+      }
+
+      .byline-sep {
+        width: 1px;
+        height: 28px;
+        background: var(--border);
+      }
+
+      .byline-stat {
+        color: var(--text-light);
+        font-size: 0.85rem;
+      }
+
+      .read-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--accent), var(--primary));
+        z-index: 1001;
+        width: 0%;
+        transition: width 0.1s linear;
+      }
+
+      .article-body {
+        padding: 4rem 1rem 6rem 4.5rem;
+      }
+
+      .article-layout {
+        max-width: 1250px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 290px;
+        gap: 4.5rem;
+        align-items: start;
+      }
+
+      .article-content {
+        min-width: 0;
+      }
+
+      .article-content p {
+        font-size: 1.08rem;
+        color: var(--text-medium);
+        line-height: 1.85;
+        margin-bottom: 1.75rem;
+      }
+
+      .lesson-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.25rem;
+        margin: 3rem 0 1.25rem;
+        padding-top: 1rem;
+        border-top: 2px solid var(--border);
+      }
+
+      .lesson-header:first-of-type {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+      }
+
+      .lesson-num {
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        background: linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-dark)
+        );
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-top: 2px;
+      }
+
+      .lesson-title {
+        font-family: var(--font-display);
+        font-size: 1.65rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        line-height: 1.25;
+      }
+
+      .pull-quote {
+        margin: 3rem 0;
+        padding-left: 1.5rem;
+        border-left: 3px solid var(--primary);
+      }
+
+      .pull-quote p {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        font-style: italic;
+        line-height: 1.7;
+        color: var(--text-dark);
+        margin: 0;
+      }
+
+      .takeaway-box {
+        background: linear-gradient(
+          135deg,
+          rgba(26, 77, 122, 0.06),
+          rgba(26, 77, 122, 0.03)
+        );
+        border: 1px solid rgba(26, 77, 122, 0.18);
+        border-radius: 10px;
+        padding: 1.1rem 1.4rem;
+        margin: 2rem 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.85rem;
+      }
+
+      .takeaway-box::before {
+        content: "→";
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--primary);
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+
+      .takeaway-box p {
+        margin: 0 !important;
+        color: var(--primary) !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+      }
+
+      .tip-box {
+        background: #eaf7f1;
+        border-left: 4px solid var(--success);
+        border-radius: 0 10px 10px 0;
+        padding: 1.25rem 1.5rem;
+        margin: 1.75rem 0;
+      }
+
+      .tip-box strong {
+        display: block;
+        color: var(--success);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        margin-bottom: 0.4rem;
+      }
+
+      .tip-box p {
+        color: var(--text-medium);
+        margin: 0 !important;
+        font-size: 1rem !important;
+      }
+
+      .story-box {
+        background: var(--bg-white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.75rem;
+        margin: 2rem 0;
+        position: relative;
+      }
+
+      .story-box::before {
+        content: "Reflection";
+        position: absolute;
+        top: -0.6rem;
+        left: 1.25rem;
+        background: var(--bg-white);
+        padding: 0 0.5rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: var(--accent);
+      }
+
+      .story-box p {
+        color: var(--text-medium);
+        font-style: italic;
+        margin: 0 !important;
+        font-size: 1rem !important;
+      }
+
+      .article-list {
+        list-style: none;
+        margin: 1rem 0 1.75rem 0;
+        padding: 0;
+      }
+
+      .article-list li {
+        padding: 0.45rem 0 0.45rem 1.6rem;
+        position: relative;
+        color: var(--text-medium);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .article-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.95rem;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      .article-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .article-tag-pill {
+        background: var(--bg-light);
+        color: var(--text-medium);
+        border: 1px solid var(--border);
+        padding: 0.35rem 0.9rem;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+
+      .author-card {
+        background: var(--bg-white);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 2rem;
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-start;
+        margin-top: 3rem;
+      }
+
+      .author-card-avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          var(--primary-light),
+          var(--primary-dark)
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+
+      .author-card-info strong {
+        display: block;
+        font-size: 1.1rem;
+        color: var(--text-dark);
+        margin-bottom: 0.25rem;
+      }
+
+      .author-card-info span {
+        display: block;
+        color: var(--accent);
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+      }
+
+      .author-card-info p {
+        color: var(--text-medium);
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      .article-sidebar {
+        position: sticky;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+      }
+
+      .sidebar-card {
+        background: var(--bg-white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.5rem;
+      }
+
+      .sidebar-card h4 {
+        font-family: var(--font-display);
+        font-size: 1.1rem;
+        color: var(--text-dark);
+        margin-bottom: 1rem;
+      }
+
+      .toc-list {
+        list-style: none;
+        counter-reset: toc;
+      }
+
+      .toc-list li {
+        counter-increment: toc;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 0.88rem;
+      }
+
+      .toc-list li:last-child {
+        border-bottom: none;
+      }
+
+      .toc-list a {
+        color: var(--text-medium);
+        text-decoration: none;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.6rem;
+        transition: var(--transition);
+        line-height: 1.4;
+      }
+
+      .toc-list a::before {
+        content: counter(toc);
+        font-weight: 700;
+        color: var(--accent);
+        font-size: 0.8rem;
+        flex-shrink: 0;
+        padding-top: 1px;
+      }
+
+      .toc-list a:hover {
+        color: var(--primary);
+      }
+
+      .related-article {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--border);
+        text-decoration: none;
+        transition: var(--transition);
+      }
+
+      .related-article:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .related-article:hover .related-title {
+        color: var(--primary);
+      }
+
+      .related-title {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--text-dark);
+        line-height: 1.4;
+        transition: var(--transition);
+      }
+
+      .related-meta {
+        font-size: 0.8rem;
+        color: var(--text-light);
+      }
+
+      .sidebar-cta {
+        background: linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-dark)
+        );
+        color: white;
+        border: none;
+      }
+
+      .sidebar-cta h4 {
+        color: white;
+        margin-bottom: 0.75rem;
+      }
+
+      .sidebar-cta p {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+      }
+
+      .sidebar-cta .btn {
+        width: 100%;
+        text-align: center;
+        background: white;
+        color: var(--primary);
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+      }
+
+      .sidebar-cta .btn:hover {
+        background: var(--accent-light);
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        color: var(--text-light);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: var(--transition);
+        margin-bottom: 1.5rem;
+      }
+
+      .back-link:hover {
+        color: var(--primary);
+      }
+
+      @media (max-width: 900px) {
+        .article-layout {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        .article-sidebar {
+          position: static;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .article-hero {
+          padding: 8rem 1.5rem 3.5rem;
+        }
+
+        .byline-sep {
+          display: none;
+        }
+
+        .article-body {
+          padding: 3rem 1.25rem 5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="read-progress" id="readProgress"></div>
+
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img
+            src="logo_transparent.png"
+            alt="GradKeys Logo"
+            class="logo-img"
+          />
+          <span>GradKeys</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li><a href="resources.html" class="active">Resources</a></li>
+          <li><a href="contact.html" class="btn-nav">Get Started</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <header class="article-hero">
+      <div class="article-hero-inner">
+        <a href="resources.html" class="back-link">← Back to Resources</a>
+        <div class="article-tag">College Advice</div>
+        <h1>What I Wish I Knew in High School</h1>
+        <p class="article-subtitle">
+          As a high school student aspiring to study in the United States, I
+          often felt lost amid the overwhelming volume of information about
+          college applications. Everyone seemed to have different advice about
+          what was “important” or what colleges were looking for. Looking back
+          now from a college student’s perspective, I can see more clearly which
+          ideas were actually helpful for goal-driven students and which things
+          mattered most.
+        </p>
+        <div class="article-byline">
+          <div class="author-avatar">JC</div>
+          <div class="byline-text">
+            <span class="byline-name">Justin Chen</span>
+            <span class="byline-meta">GradKeys Counselor</span>
+          </div>
+          <div class="byline-sep"></div>
+          <span class="byline-stat">March 2026</span>
+          <div class="byline-sep"></div>
+          <span class="byline-stat">10 min read</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="article-body" id="articleBody">
+      <div class="article-layout">
+        <article class="article-content">
+          <div class="lesson-header" id="lesson-1">
+            <div class="lesson-num">1</div>
+            <div class="lesson-title">
+              Long-term extracurriculars matter more than short-term ones
+            </div>
+          </div>
+
+          <p>
+            Long-term extracurricular involvement is far more meaningful than
+            jumping between short-term activities. Simply put, consistently
+            participating in an activity for several years—such as throughout
+            all four years of high school—is usually more valuable than joining
+            something briefly just because people say it will “look good” on an
+            application.
+          </p>
+
+          <p>
+            Even if the final event or achievement is short, the preparation
+            behind it matters. Spending months or even years preparing for
+            something meaningful shows dedication and genuine interest. Colleges
+            can clearly see when a student has invested time and effort into
+            something they truly care about.
+          </p>
+
+          <p>
+            From my perspective now as a college student, I also believe that
+            doing something you genuinely enjoy is more valuable than forcing
+            yourself into activities you dislike just because they seem useful
+            for a future major. When you pursue what you truly enjoy, you
+            naturally build stronger experiences, meaningful friendships, and
+            lasting memories.
+          </p>
+
+          <div class="takeaway-box">
+            <p>
+              Consistency shows more than ambition alone. Colleges notice when
+              students commit to something over time and grow through it.
+            </p>
+          </div>
+
+          <div class="lesson-header" id="lesson-2">
+            <div class="lesson-num">2</div>
+            <div class="lesson-title">GPA is extremely important</div>
+          </div>
+
+          <p>
+            Many people emphasize the importance of essays, and it is true that
+            essays can influence how admissions officers understand your story.
+            However, GPA is the key that opens the door in the first place.
+          </p>
+
+          <p>
+            Without a strong GPA, your application may not even make it far into
+            the selection process. GPA establishes the academic standard that
+            determines which colleges are realistically within reach. Essays can
+            help shape how admissions committees see you, but GPA builds the
+            foundation of your application.
+          </p>
+
+          <p>
+            In other words, essays may influence where you are placed among
+            applicants, but GPA determines which opportunities are available to
+            begin with.
+          </p>
+
+          <div class="tip-box">
+            <strong>Key Insight</strong>
+            <p>
+              Essays help distinguish you, but GPA creates the academic baseline
+              that gives your application access to opportunity.
+            </p>
+          </div>
+
+          <div class="lesson-header" id="lesson-3">
+            <div class="lesson-num">3</div>
+            <div class="lesson-title">
+              Build genuine relationships with teachers and mentors
+            </div>
+          </div>
+
+          <p>
+            Developing genuine relationships with teachers, mentors, and other
+            supportive individuals is incredibly valuable. These connections
+            extend far beyond recommendation letters.
+          </p>
+
+          <p>
+            Strong relationships are built through time, trust, and consistent
+            interaction. When teachers understand your character, work ethic,
+            and personal goals, they can provide guidance that goes far beyond
+            the classroom. Their mentorship can help shape academic decisions,
+            career interests, and personal development.
+          </p>
+
+          <p>
+            These interpersonal skills also become increasingly important in
+            college and professional environments. Relationships with professors
+            can lead to research opportunities, teaching assistant positions,
+            internships, and valuable mentorship. Learning how to build and
+            maintain these connections early on is an important step toward
+            long-term success.
+          </p>
+
+          <div class="story-box">
+            <p>
+              Recommendation letters are only one part of the value. The deeper
+              benefit is learning how to build trust, seek guidance, and
+              maintain relationships that continue to matter long after high
+              school.
+            </p>
+          </div>
+
+          <div class="lesson-header" id="lesson-4">
+            <div class="lesson-num">4</div>
+            <div class="lesson-title">
+              Responsibility matters more than you expect
+            </div>
+          </div>
+
+          <p>
+            The transition from high school to college often happens faster than
+            students expect. One moment, you are navigating structured routines
+            in high school, and soon after, you are responsible for managing
+            your own academic and personal life in a completely new environment.
+          </p>
+
+          <p>
+            Particularly for students studying abroad, this transition can
+            involve adapting to unfamiliar cultures, systems, and expectations.
+            During these moments, responsibility becomes one of the most
+            important qualities you can develop.
+          </p>
+
+          <p>
+            Growth often comes from learning how to take ownership of your
+            decisions and understanding how those decisions affect both yourself
+            and others. Creativity allows individuals to imagine new
+            opportunities and ideas, but responsibility is what enables those
+            ideas to become a reality.
+          </p>
+
+          <div class="takeaway-box">
+            <p>
+              Independence in college is not just freedom. It is the ability to
+              manage consequences, adapt quickly, and take ownership of your
+              choices.
+            </p>
+          </div>
+
+          <div class="lesson-header" id="lesson-5">
+            <div class="lesson-num">5</div>
+            <div class="lesson-title">
+              Stay positive and remember to enjoy the journey
+            </div>
+          </div>
+
+          <p>
+            Preparing for college comes with many challenges. Everyone faces
+            their own struggles—adjusting to a new environment, making new
+            friends, navigating applications, and sometimes even dealing with
+            visas or moving far from home.
+          </p>
+
+          <p>It is okay to feel lost. It is okay to be afraid of change.</p>
+
+          <p>
+            What truly matters is remembering who you are and why you started
+            this journey in the first place. There will always be people who are
+            proud of you: your friends, your family, your teachers, and many
+            others who support your growth.
+          </p>
+
+          <p>
+            Time passes faster than you think. Before you realize it, you will
+            be graduating and looking back at the people who once sat beside you
+            in class and the memories you created together. I hope you never
+            forget that kind of happiness.
+          </p>
+
+          <div class="pull-quote">
+            <p>
+              The college journey is not only about reaching a destination. It
+              is also about remembering the people, growth, and happiness that
+              shaped you along the way.
+            </p>
+          </div>
+
+          <h2
+            style="
+              font-family: var(--font-display);
+              font-size: 1.75rem;
+              color: var(--text-dark);
+              margin-top: 3rem;
+            "
+          >
+            Final Thoughts
+          </h2>
+
+          <p>
+            Looking back, the college application process felt much more
+            complicated than it needed to be. What mattered most was not doing
+            everything, but understanding what deserved long-term effort,
+            genuine care, and personal responsibility.
+          </p>
+
+          <ul class="article-list">
+            <li>Commit to extracurriculars that genuinely matter to you</li>
+            <li>Take your GPA seriously from the beginning</li>
+            <li>Invest in real relationships with teachers and mentors</li>
+            <li>Learn how to take ownership of your decisions</li>
+            <li>Do not lose sight of your happiness in the process</li>
+          </ul>
+
+          <p>
+            For students still in high school, these lessons may seem simple.
+            But often, they only become obvious in hindsight. That is exactly
+            why they are worth sharing now.
+          </p>
+
+          <div class="article-tags">
+            <span class="article-tag-pill">College Advice</span>
+            <span class="article-tag-pill">High School Planning</span>
+            <span class="article-tag-pill">U.S. Applications</span>
+            <span class="article-tag-pill">Extracurriculars</span>
+            <span class="article-tag-pill">Student Perspective</span>
+          </div>
+
+          <div class="author-card">
+            <div class="author-card-avatar">JC</div>
+            <div class="author-card-info">
+              <strong>Justin Chen</strong>
+              <span>GradKeys Counselor</span>
+              <p>
+                Justin writes about the college application process from the
+                perspective of a current student who has experienced the
+                transition firsthand. His work focuses on helping students
+                understand what truly matters in high school and how to prepare
+                for college with greater clarity and confidence.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="article-sidebar">
+          <div class="sidebar-card">
+            <h4>In This Article</h4>
+            <ol class="toc-list">
+              <li><a href="#lesson-1">Long-term extracurriculars</a></li>
+              <li><a href="#lesson-2">Why GPA matters</a></li>
+              <li><a href="#lesson-3">Relationships and mentorship</a></li>
+              <li><a href="#lesson-4">Responsibility and independence</a></li>
+              <li><a href="#lesson-5">Staying positive</a></li>
+            </ol>
+          </div>
+
+          <div class="sidebar-card sidebar-cta">
+            <h4>Need application guidance?</h4>
+            <p>
+              Our counselors help students build strong profiles, write
+              compelling essays, and navigate the college process with clarity.
+            </p>
+            <a href="contact.html" class="btn">Book a Free Consultation</a>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>More Articles</h4>
+            <a href="top-5-mistakes-essay.html" class="related-article">
+              <span class="related-title"
+                >Top 5 Mistakes You Need to Avoid in Your Essay</span
+              >
+              <span class="related-meta">Alyssa Yang · 8 min read</span>
+            </a>
+            <a href="resources.html" class="related-article">
+              <span class="related-title"
+                >The Ultimate Guide to UK University Applications</span
+              >
+              <span class="related-meta">Esther Tsai · 15 min read</span>
+            </a>
+            <a href="resources.html" class="related-article">
+              <span class="related-title"
+                >Are U.S. Colleges Really for Everyone?</span
+              >
+              <span class="related-meta">Derrick Lin · 12 min read</span>
+            </a>
+            <a href="resources.html" class="related-article">
+              <span class="related-title"
+                >I Came to the U.S. for Pre-Med — Here's What It's Actually
+                Like</span
+              >
+              <span class="related-meta">Kathryn Tsai · 11 min read</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Plan Your College Journey?</h2>
+          <p>
+            Our counselors help students build strong applications with
+            strategy, clarity, and personalized support.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-large"
+            >Work With Our Experts</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2L4 9V15C4 22.18 9.84 28.54 16 30C22.16 28.54 28 22.18 28 15V9L16 2Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 10V20M11 15L16 20L21 15"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>GradKeys</span>
+            </div>
+            <p>
+              Empowering students to unlock their full potential and achieve
+              their college dreams.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li>
+                <a href="services.html#college-list">College List Strategy</a>
+              </li>
+              <li><a href="services.html#test-prep">SAT/TOEFL Tutoring</a></li>
+              <li><a href="services.html#essay-review">Essay Review</a></li>
+              <li>
+                <a href="services.html#extracurricular"
+                  >Extracurricular Consulting</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="why-us.html">Why Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="mailto:info@gradkeys.net">info@gradkeys.net</a></li>
+              <li><a href="https://line.me/R/ti/p/{LINE ID}">Line</a></li>
+              <li>
+                <a href="https://www.instagram.com/gradkeys/">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 GradKeys. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const bar = document.getElementById("readProgress");
+      window.addEventListener("scroll", () => {
+        const body = document.body;
+        const html = document.documentElement;
+        const total =
+          Math.max(body.scrollHeight, html.scrollHeight) - window.innerHeight;
+        const pct = (window.scrollY / total) * 100;
+        bar.style.width = pct + "%";
+      });
+    </script>
+  </body>
+</html>
