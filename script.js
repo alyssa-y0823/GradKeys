@@ -128,7 +128,7 @@ const teamMembersEn = {
         linkedin: "https://www.linkedin.com/in/hung-chi-chen-5b20b1347/",
         bio: `<p>Justin is a Computer Science student at Washington University in St. Louis and a recipient of the McKelvey School of Engineering Dean’s List. At WashU, he serves as a Teaching Assistant for Introduction to Computer Science and Introduction to Computer Engineering, teaching over 200 students through lectures and office hours. He is also entrusted with proctoring and grading midterm and final exams, and assignments, supporting courses totaling more than 800 students. In addition, he tutors college-level calculus and matrix algebra, with 81 percent of his students improving from the B range to an A.</p>
         <p>Justin began conducting research at National Taiwan University in high school, becoming the first student from his school to join the LOPE lab. In college, he collaborated with NTU PhD and master’s students to develop an AI framework for complex multi-step reasoning tasks. His team became the first AI research group to participate in the International Linguistics Olympiad.</p>
-        <p>During high school, he served as Chair and Assistant Director of Yale Model United Nations Taiwan and competed on his school’s representative math and debate teams. In college, he serves as President of the WashU Badminton Club, leading over 150 members and spearheading Missouri’s first-ever national-level badminton tournament. He also serves as captain of the school’s Division I badminton team.</p>`
+        <p>During high school, he served as Chair and Assistant Director of Yale Model United Nations Taiwan and competed on his school’s representative math and debate teams. In college, he serves as President of the WashU Badminton Club, leading over 200 members and spearheading Missouri’s first-ever national-level badminton tournament. He also serves as captain of the school’s Division I badminton team.</p>`
     },
     2: {
         name: "Alyssa Yang",
@@ -171,9 +171,9 @@ const teamMembersZh = {
         name: "Justin Chen",
         role: "Washington University in St. Louis",
         linkedin: "https://www.linkedin.com/in/hung-chi-chen-5b20b1347/",
-        bio: `<p>Justin 是 Washington University in St. Louis 的電腦科學學生，並獲得 McKelvey School of Engineering 院長名單榮譽。在 WashU，他擔任 Introduction to Computer Science 與 Introduction to Computer Engineering 的助教，透過課堂講解與 office hours 協助超過 200 名學生學習。他同時負責監考與批改期中、期末考及各項作業，支援總計超過 800 名學生的課程。此外，他也教授大學程度的微積分與矩陣代數，所輔導學生中有 81% 從 B 區間提升到 A。</p>
-        <p>Justin 在高中時期便開始於國立臺灣大學進行研究，成為其高中第一位進入 LOPE Lab 的學生。進入大學後，他與臺大博士生及碩士生合作，開發一套用於複雜多步驟推理任務的 AI 架構。他所在團隊也成為第一個參與 International Linguistics Olympiad 的 AI 研究團隊。</p>
-        <p>高中期間，Justin 曾擔任 Yale Model United Nations Taiwan 的主席與副總監，並是校內數學隊與辯論隊成員。進入大學後，他擔任 WashU Badminton Club 的會長，帶領超過 150 名成員，並主導密蘇里州首場全國級羽球賽事的舉辦。他同時也是校隊 Division I 羽球隊隊長。</p>`
+        bio: `<p>Justin 是華盛頓大學聖路易斯分校的電腦科學學生，並入選 McKelvey 工程學院院長榮譽榜（Dean’s List）。在 WashU，他擔任《計算機科學導論》與《計算機工程導論》的助教，透過課堂講解與 office hours 指導超過 200 名學生。他同時負責監考與批改期中、期末考試及作業，協助的課程總學生數超過 800 人。此外，他也教授大學程度的微積分與矩陣代數，其中有 81% 的學生從 B 等級提升至 A。</p>
+        <p>Justin 在高中時期便開始於國立臺灣大學進行研究，成為其高中第一位進入 LOPE Lab 的學生。進入大學後，他與臺大博士生及碩士生合作，開發用於複雜多步驟推理任務的 AI 框架。他的團隊也成為第一個參與國際語言學奧林匹亞（International Linguistics Olympiad）的 AI 研究團隊。</p>
+        <p>高中期間，Justin 曾擔任 Yale Model United Nations Taiwan 的主席與副總監，並代表學校參加數學與辯論校隊。進入大學後，他擔任 WashU 羽球社社長，領導超過 200 名成員，並主導舉辦密蘇里州首個全國等級的羽球錦標賽。同時，他也是學校第一級別（Division I）羽球校隊的隊長。</p>`
     },
     2: {
         name: "Alyssa Yang",
