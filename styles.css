@@ -71,7 +71,7 @@ body {
 }
 
 .logo-img {
-  height: 44px;   /* adjust between 36–48px */
+  height: 40px;   /* adjust between 36–48px */
   width: auto;
   display: block;
 }
@@ -84,7 +84,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.7rem 2rem;
+    padding: 1.55rem 2rem;
 }
 
 .logo {
@@ -92,7 +92,7 @@ body {
     align-items: center;
     gap: 0.75rem;
     font-family: var(--font-display);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
