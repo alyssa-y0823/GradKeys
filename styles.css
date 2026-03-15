@@ -71,7 +71,7 @@ body {
 }
 
 .logo-img {
-  height: 38px;   /* adjust between 36–48px */
+  height: 44px;   /* adjust between 36–48px */
   width: auto;
   display: block;
 }
@@ -84,7 +84,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 2rem;
+    padding: 1.7rem 2rem;
 }
 
 .logo {
@@ -92,7 +92,7 @@ body {
     align-items: center;
     gap: 0.75rem;
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
@@ -159,6 +159,49 @@ body {
 
 .btn-nav::after {
     display: none;
+}
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.language-toggle{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.lang-link{
+  text-decoration:none;
+  font-size:0.9rem;
+  color:var(--text-medium);
+  font-weight:500;
+  transition:var(--transition);
+}
+
+.lang-link:hover{
+  color:var(--primary);
+}
+
+.lang-link.active{
+  color:var(--primary);
+  font-weight:600;
+}
+
+.lang-divider{
+  width:1px;
+  height:18px;
+  background:var(--border);
+}
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  margin-left:auto;
+}
+.language-toggle{
+  margin-left:20px;
 }
 
 .mobile-menu-toggle {
