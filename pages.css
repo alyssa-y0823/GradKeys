@@ -733,6 +733,14 @@
   font-weight: 700;
   color: var(--primary);
 }
+.event-info-item a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.event-info-item a:hover {
+  color: var(--primary-dark);
+}
 
 .mini-date-card {
   padding: 1rem;
@@ -1257,7 +1265,7 @@
 
 /* Control height */
 .booking-iframe-scale iframe {
-    width: 100%;
+    width: 100%;x
     height: 900px;
     border: 0;
 }
