@@ -169,9 +169,9 @@ const teamMembersEn = {
 const teamMembersZh = {
     1: {
         name: "Justin Chen",
-        role: "Washington University in St. Louis",
+        role: "聖路易斯華盛頓大學",
         linkedin: "https://www.linkedin.com/in/hung-chi-chen-5b20b1347/",
-        bio: `<p>Justin 是華盛頓大學聖路易斯分校的電腦科學學生，並入選 McKelvey 工程學院院長榮譽榜（Dean’s List）。在 WashU，他擔任《計算機科學導論》與《計算機工程導論》的助教，透過課堂講解與 office hours 指導超過 200 名學生。他同時負責監考與批改期中、期末考試及作業，協助的課程總學生數超過 800 人。此外，他也教授大學程度的微積分與矩陣代數，其中有 81% 的學生從 B 等級提升至 A。</p>
+        bio: `<p>Justin 是聖路易斯華盛頓大學的電腦科學學生，並入選 McKelvey 工程學院院長嘉許名單（Dean’s List）。在 WashU，他擔任《計算機科學概論》與《計算機工程概論》的助教，透過課堂講解與 office hours 指導超過 200 名學生。他同時負責監考與批改期中、期末考試及作業，協助的課程總學生數超過 800 人。此外，他也教授大學程度的微積分與矩陣代數，其中有 81% 的學生從 B 等級提升至 A。</p>
         <p>Justin 在高中時期便開始於國立臺灣大學進行研究，成為其高中第一位進入 LOPE Lab 的學生。進入大學後，他與臺大博士生及碩士生合作，開發用於複雜多步驟推理任務的 AI 框架。他的團隊也成為第一個參與國際語言學奧林匹亞（International Linguistics Olympiad）的 AI 研究團隊。</p>
         <p>高中期間，Justin 曾擔任 Yale Model United Nations Taiwan 的主席與副總監，並代表學校參加數學與辯論校隊。進入大學後，他擔任 WashU 羽球社社長，領導超過 200 名成員，並主導舉辦密蘇里州首個全國等級的羽球錦標賽。同時，他也是學校第一級別（Division I）羽球校隊的隊長。</p>`
     },
